@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddBookDialog</class>
+ <widget class="QDialog" name="AddBookDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Book</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #fffbe7, stop:1 #e0c097);
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelHeader">
+     <property name="styleSheet">
+      <string notr="true">
+font-size: 22px;
+font-weight: bold;
+color: #4e342e;
+margin-bottom: 16px;
+font-family: 'Georgia', 'Times New Roman', serif;
+      </string>
+     </property>
+     <property name="text">
+      <string>Add New One</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEditTitle">
+     <property name="styleSheet">
+      <string notr="true">
+QLineEdit {
+    border: 2px solid #a1887f;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 15px;
+    background: #fffbe7;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+      </string>
+     </property>
+     <property name="placeholderText">
+      <string>Title</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEditAuthor">
+     <property name="styleSheet">
+      <string notr="true">
+QLineEdit {
+    border: 2px solid #a1887f;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 15px;
+    background: #fffbe7;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+      </string>
+     </property>
+     <property name="placeholderText">
+      <string>Author</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEditYear">
+     <property name="styleSheet">
+      <string notr="true">
+QLineEdit {
+    border: 2px solid #a1887f;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 15px;
+    background: #fffbe7;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+      </string>
+     </property>
+     <property name="placeholderText">
+      <string>Year</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="styleSheet">
+      <string notr="true">
+QDialogButtonBox QPushButton {
+    background-color: #8d6e63;
+    color: #fffbe7;
+    border-radius: 10px;
+    padding: 8px 28px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+QDialogButtonBox QPushButton:hover {
+    background-color: #6d4c41;
+}
+      </string>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
